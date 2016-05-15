@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--  SEO STUFF START HERE -->
+        <title>Grace International Church: Home</title>
+        <meta name="keywords" content="" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <meta name="robots" content="follow, index" />
+        <!--  SEO STUFF END -->
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/redmond/jquery-ui.css" rel="stylesheet" />
+        <!--  revolution slider plugin : begin -->
+        <link rel="stylesheet" type="text/css" href="assets/styles/settings.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="assets/styles/rs-responsive.css" media="screen" />
+        <link rel="shortcut icon" href="assets/images/favicon.ico">
+        <!--  revolution slider plugin : end -->
+        <link rel="stylesheet" href="assets/styles/bootstrap.css" />
+        <link rel="stylesheet" href="assets/styles/custom.css" />
+        <link rel="stylesheet" href="assets/styles/isotope.css" />
+        <link rel="stylesheet" href="assets/styles/color_scheme.css" />
+        <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="assets/styles/font-awesome.css" />
+        <link rel="stylesheet" href="assets/styles/font-awesome-ie7.css" />
+        <link rel="stylesheet" href="assets/styles/flexslider.css" />
+        <link rel="stylesheet" href="assets/styles/jquery.fancybox.css?v=2.1.0" type="text/css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="assets/styles/miniplayer.css" title="style"  media="screen"/>
+
+	     <!--[if lte IE 8]>
+            <link rel="stylesheet" type="text/css" href="assets/styles/IE-fix.css" />
+        <![endif]-->
+    </head>
+    <body>
+<!-- THE LINE AT THE VERY TOP OF THE PAGE -->
+        <div class="top_line"></div>
+<!-- HEADER AREA -->
+        <header>
+            <div class="container">
+                <div class="row">
+<!-- HEADER: LOGO AREA -->
+                    <div class="span4 logo">
+                        <a class="logo" href="http://www.cincygrace.com">
+                            <img alt="logo" title="Grace" src="assets/images/logo.png">
+                        </a>
+                    </div>
+                    <div class="span4 offset4">
+<!-- HEADER: PHONE NUMBER -->
+                        <p class="head_phone"><a href="tel:555-555-5555"></a></p>
+                    </div>
+<!-- HEADER: SOCIAL ICONS -->
+                    <ul class="socials unstyled">
+                        <li><a class="twitter" href="https://twitter.com/SamDarla10"></a></li>
+                        <li><a class="facebook" href="https://www.facebook.com/PastorSamDarla"></a></li>
+                        <li><a class="youtube" href="http://www.youtube.com/user/samdarla10"></a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+<!-- HEADER: PRIMARY SITE NAVIGATION -->
+            <div class="container">
+                <div class="navbar">
+                    <div class="navbar-inner">
+                        <div class="container">
+                            <div class="buttons-container">
+                            </div>
+                            <div class="nav-collapse">
+                                <ul class="nav nav-pills">
+
+                                    <li class="active single"><a href="#">HOME
+                                            <i>Grace home</i>
+                                        </a>
+                                    </li>
+                                    <li class="  dropdown">
+                                        <a   class="dropdown-toggle" data-toggle="dropdown" href="/aboutus/believe">
+                                            ABOUT US<i>who we are</i>
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                           <li><a href="aboutus/believe">We Believe</a></li>
+                                           <li><a href="aboutus/pastor">Our Pastor</a></li>
+                                           <li><a href="aboutus/gallery">Gallery</a></li>
+
+                                        </ul>
+
+                                    </li>
+                                    <li class=" dropdown">
+                                        <a href="videos">
+                                            SERMONS<i> view or listen</i>
+                                        </a>
+										 <ul class="dropdown-menu">
+                                           <li><a href="aboutus/sermons">Audio</a></li>
+                                           <li><a href="aboutus/videos">Video</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class=" single">
+                                        <a   href="category/events">
+                                            EVENTS<i>what's new?</i>
+                                        </a>
+
+                                    </li>
+
+                                    <li class=" single"><a href="contactus">CONTACT US
+                                            <i>get in touch</i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+<!-- MAIN CONTENT AREA -->
+        <div class="main-content">
+          <div class="container">
+<!-- MAIN CONTENT AREA: Church Motto -->
+            <div class="church-motto">
+                <p> "Carrying God's supernatural power to the nations" </p>
+            </div>
+<!-- MAIN CONTENT AREA: SLIDER BANNER (REVOLUTION SLIDER) -->
+                <div class="bannercontainer" >
+                    <div class="banner" >
+                        <ul>
+
+                          <li class="slide1" data-transition="slideleft" data-slotamount="5"  data-masterspeed="300">
+                          <img alt="" src="assets/images/PastorSamTrip.jpg" />
+                          </li>
+
+                          <li class="slide1" data-transition="slidedown" data-slotamount="5"  data-masterspeed="300">
+                          <img alt="" src="assets/images/Supernatural-Encounter.png" />
+                          </li>
+
+                          <li class="slide1" data-transition="boxfade" data-slotamount="5"  data-masterspeed="300">
+                          <img alt="" src="assets/images/Slide2-21.jpg" />
+                          </li>
+
+                          <li class="slide1" data-transition="slideleft" data-slotamount="5"  data-masterspeed="300">
+                          <img alt="" src="assets/images/Slide1-copy1.jpg" />
+                          </li>
+
+                          <li class="slide1" data-transition="slotfade-horizontal" data-slotamount="5"  data-masterspeed="300">
+                          <img alt="" src="assets/images/slider01.png" />
+                          </li>
+
+                          <li class="slide1" data-transition="slideleft" data-slotamount="5"  data-masterspeed="300">
+                          <img alt="" src="assets/images/slider02.jpg" />
+                          </li>
+
+                          <li class="slide1" data-transition="slideleft" data-slotamount="5"  data-masterspeed="300">
+                          <img alt="" src="assets/images/growthfactors.png" />
+                          </li>
+
+                          <li class="slide1" data-transition="slideleft" data-slotamount="5"  data-masterspeed="300">
+                          <img alt="" src="assets/images/JoshuaGeneration.jpg" />
+                          </li>
+
+                      </ul>
+                        <div class="tp-bannertimer"></div>
+                    </div>
+                </div>
+                <div class="row main-block">
+                    <div class="span12">
+                        <div class="row">
+<!--  MAIN CONTENT AREA: REDESIGN CUSTOM - HERO BLOCK 1 (TEXT BLOCK)] -->
+                            <div class="span6 home-block hero-block-1">
+                                <h1>Welcome to Grace</h1>
+                                <h2>Experience God's supernatural power</h2>
+                                <p>We are an international body that truly believe in God's word and its supernatural power to transform lives.
+				    We are seeing God working powerfully among us through healing, miracles and deliverance. <br/>
+					Our vision is to one day see all of Cincinnati come worship the most high God with us. Come visit us at one of our services here. </p>
+                            </div>
+<!-- MAIN CONTENT AREA: SPACER BETWEEN HERO BLOCK 1 AND HEREO BLOCK 2 -->
+                            <div class="span1">
+                            </div>
+<!-- MAIN CONTENT AREA: bizstrap CUSTOM - HERO BLOCK 2 -->
+                            <div class="span5 home-block">
+                                <div class="grey-box hero-block-2">
+                                    <h2><a href="#">Connect With Us</a></h2>
+                                    <p><img alt="" src="assets/images/connectgrow.jpg" />
+					</p>
+					<ul>
+						<li><a  href="https://www.facebook.com/PastorSamDarla" ><img src="assets/images/facebook.png" /> Facebook</a> </li>
+						<li><a  href="https://twitter.com/SamDarla10" ><img src="assets/images/twitter.png" /> Twitter</a></li>
+						<li><a  href="http://www.youtube.com/user/samdarla10" ><img src="assets/images/you_tube.png" /> You Tube</a></li>
+					</ul>
+                                    <!-- a href="#" class="btn btn-warning">Give Online</a -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+<!-- MAIN CONTENT AREA: bizstrap CUSTOM - RECENT POSTS BLOACK (ORIGINALLY DESIGNED FOR HOME PAGE) -->
+                <div class="main-block block-posts">
+                    <div class="title-wrapper">
+
+                    </div>
+                    <div class="row show-grid clear-both">
+                        <div class="span12">
+                            <div class="row show-grid">
+
+<!-- Each Video-->
+
+                                <div class="span3">
+                                    <a class="block-post-img youtube" href="https://www.youtube.com/v/vWH04mGvGRU">
+                                        <img alt="" style="height:160; width:220"  src="https://i.ytimg.com/vi/vWH04mGvGRU/hqdefault.jpg"lass="img-rounded" />
+                                    </a>
+                                    <a class="block-post-title youtube" href="https://www.youtube.com/v/vWH04mGvGRU">Singapore Ministry</a>
+                                    <p class="block-post-date"></p>
+                                    <p class="block-post-content">Mark 16:20King James Version (KJV)
+
+20 And they went forth, and preached every where, the Lord working with them, and confirming the word with signs following. Amen.</p>
+                                    <a class="block-post-more youtube" href="https://www.youtube.com/v/vWH04mGvGRU">View Online&nbsp;&raquo;</a>
+                                </div>
+
+<!-- end Foreach Video -->
+
+<!-- Each Video-->
+
+                                <div class="span3">
+                                    <a class="block-post-img youtube" href="https://www.youtube.com/v/NJbswG4XKPU">
+                                        <img alt="" style="height:160; width:220"  src="https://i.ytimg.com/vi/NJbswG4XKPU/hqdefault.jpg"lass="img-rounded" />
+                                    </a>
+                                    <a class="block-post-title youtube" href="https://www.youtube.com/v/NJbswG4XKPU">Addicted to Jesus</a>
+                                    <p class="block-post-date"></p>
+                                    <p class="block-post-content"></p>
+                                    <a class="block-post-more youtube" href="https://www.youtube.com/v/NJbswG4XKPU">View Online&nbsp;&raquo;</a>
+                                </div>
+
+<!-- end Foreach Video -->
+
+<!-- Each Video-->
+
+                                <div class="span3">
+                                    <a class="block-post-img youtube" href="https://www.youtube.com/v/OiZ3PhBVUjU">
+                                        <img alt="" style="height:160; width:220"  src="https://i.ytimg.com/vi/OiZ3PhBVUjU/hqdefault.jpg"lass="img-rounded" />
+                                    </a>
+                                    <a class="block-post-title youtube" href="https://www.youtube.com/v/OiZ3PhBVUjU">09212015-Holiness</a>
+                                    <p class="block-post-date"></p>
+                                    <p class="block-post-content"></p>
+                                    <a class="block-post-more youtube" href="https://www.youtube.com/v/OiZ3PhBVUjU">View Online&nbsp;&raquo;</a>
+                                </div>
+
+<!-- end Foreach Video -->
+
+<!-- Each Video-->
+
+                                <div class="span3">
+                                    <a class="block-post-img youtube" href="https://www.youtube.com/v/SPaM7B648ag">
+                                        <img alt="" style="height:160; width:220"  src="https://i.ytimg.com/vi/SPaM7B648ag/hqdefault.jpg"lass="img-rounded" />
+                                    </a>
+                                    <a class="block-post-title youtube" href="https://www.youtube.com/v/SPaM7B648ag">09232015-Faith</a>
+                                    <p class="block-post-date"></p>
+                                    <p class="block-post-content"></p>
+                                    <a class="block-post-more youtube" href="https://www.youtube.com/v/SPaM7B648ag">View Online&nbsp;&raquo;</a>
+                                </div>
+
+<!-- end Foreach Video -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="row main-block">
+                    <div class="span12">
+<!-- MAIN CONTENT AREA: bizstrap CUSTOM - HERO LIST -->
+
+                    </div>
+                    <div class="horizontal-divider span12"></div>
+                </div>
+<!-- MAIN CONTENT AREA: bizstrap CUSTOM - PORTFOLIO GRID BLOCK (ORIGINALLY DESIGNED FOR HOME PAGE) -->
+
+<!-- MAIN CONTENT AREA: bizstrap CUSTOM - HORIZONTAL TESTIMONIAL BLOCK -->
+                <div class="main-block testimonials">
+                    <div class="title-wrapper">
+                        <h2>Testimonies</h2><!-- a href="#" class="all">Show all &nbsp;&raquo;</a -->
+                    </div>
+                    <div class="clear-both"></div>
+                    <div class="row show-grid">
+                        <div class="span12">
+                            <div class="testimonials-block">
+                                <div class="quote"></div>
+                                <p class="first-row">I had been using my crutches for 10 months. Today the Lord has touched my heart and my body.  </p>
+                                <p>I put my crutches aside and I am walking pain free.
+					<a href="http://www.youtube.com/watch?v=1hiEK82D_bw&list=UUCsyvIBlhT5L67s0-uixLnQ&index=4">Watch Online</a>
+				</p>
+                                <p></p>
+                                <p class="autor">David Khosa</p>
+                            </div>
+                        </div>
+                    </div>
+<!-- MAIN CONTENT AREA: bizstrap CUSTOM - HERO BLOCK 3 -->
+                    <!-- div class="row show-grid">
+                        <div class="span12 grey-box">
+                            <div class="hero-block3">
+                                <div class="row show-grid">
+                                    <div class="span9">
+                                        <div class="hero-content-3">
+                                            <h2>Get your copy of bizstrap today!</h2>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non libero magna. Sed et quam lacus. Fusce condimentum eleifend enim a feugiat. Pellentesque viverra vehicula sem ut volutpat. Integer sed arcu massa.</p>
+                                        </div>
+                                    </div>
+                                    <div class="span3">
+                                        <div class="tour-btn">
+                                            <a href="#" class="btn btn-warning">Buy Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr -->
+
+<!-- MAIN CONTENT AREA: bizstrap CUSTOM - CLIENTS LOGO BAR -->
+
+            </div>
+<!-- MAIN CONTENT AREA: bizstrap CUSTOM - RECENT TWEETS BAR -->
+            <!--div class="recent-tweets">
+                <div class="container">
+                    <div class="row show-grid">
+                        <div class="span12 twitter-wrapper">
+                            <div id="nav_t"></div>
+                            <div class="tweets-slide"><ul class="slides"></ul></div>
+                            <a class="follow_img" href="#"><img alt="" src="assets/images/follow.png" /></a>
+                        </div>
+                    </div>
+                </div>
+            </div -->
+        </div>
+<!-- FOOTER STARTS HERE -->
+        <footer id="footer">
+            <div class="footer-top"></div>
+            <div class="footer-wrapper">
+                <div class="container">
+                    <div class="row show-grid">
+                        <div class="span12">
+                            <div class="row show-grid">
+<!-- FOOTER: LOGO -->
+                                <div class="span4">
+                                    <img alt="" class="footer-logo" src="assets/images/grey_logo.png" />
+<!-- FOOTER: ADDRESS -->
+                                    <address class="address">
+                                        <p><i class="icon-map-marker icon-large"></i>1600 Glendale Milford Rd </p>
+                                       <p><i>&nbsp;</i>Cincinnati, OH  45246</p>
+                                        <p><i class="icon-phone icon-large"></i>Phone: 513-238-4771 </p>
+                                    </address>
+                                </div>
+<!-- FOOTER: ABOUT US -->
+                                <div class="span4 footer-center">
+                                    <h4 class="center-title">About Us</h4>
+                                    <p>Grace International is a ministry by Sam Darla with a mission to reach with the supernatural power of God to Cincinnati and beyond.</p>
+                                </div>
+<!-- FOOTER: NAVIGATION LINKS -->
+                                <div class="span4 footer-right">
+                                    <h4 class="center-title">Navigate</h4>
+                                    <ul class="footer-navigate">
+                                        <li>
+                                            <a href="http://www.cincygrace.com">Home</a>
+                                        </li>
+                                        <li>
+                                            <a href="aboutus/believe/">About Us</a>
+                                        </li>
+                                        <li>
+                                            <a href="sermons">Sermons</a>
+                                        </li>
+                                        <li>
+                                            <a href="category/events">Events</a>
+                                        </li>
+                                        <li>
+                                            <a href="contactus">Contact</a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+	<div class="footer-bottom">
+                <div class="container">
+                    <div class="row show-grid">
+<!-- FOOTER: COPYRIGHT TEXT -->
+                        <div class="span12">
+                            <p> Grace International Church Copyright 2013.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+<!-- END FOOTER -->s
+<!-- Placed at the end of the document so the pages load faster -->
+<script type="text/javascript">
+
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-40233915-1']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+ var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+ })();
+
+</script>
+<script type="text/javascript" src="scripts/jquery1.7.2.min.js"></script>
+        <script type="text/javascript" src="scripts/bootstrap.js"></script>
+        <script type="text/javascript" src="scripts/jquery.flexslider-min.js"></script>
+        <script type="text/javascript" src="scripts/jquery.isotope.js"></script>
+        <script type="text/javascript" src="scripts/jquery.fancybox.pack.js?v=2.1.0"></script>
+        <script type="text/javascript" src="scripts/jquery.themepunch.plugins.min.js"></script>
+        <script type="text/javascript" src="scripts/jquery.themepunch.revolution.min.js"></script>
+	<script type="text/javascript" src="scripts/revolution.custom.js"></script>
+	<script type="text/javascript" src="scripts/jquery.validate.min.js"></script>
+	<script type="text/javascript" src="scripts/custom.js"></script>
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="scripts/jquery.youtubepopup.js"></script>
+    </body>
+</html>
+<script type="text/javascript">
+
+        jQuery(document).ready(function($){
+
+             $("a.youtube").YouTubePopup(
+                {
+                    autoplay: 1,
+                    showBorder: true,
+                    theme:'light',
+                    overlayOpacity: .5,
+                    hideTitleBar : true,
+                    height: 400,
+					cssClass: 'modal-dialog'
+                        });
+
+        });
+
+
+    </script>

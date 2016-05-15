@@ -1,0 +1,33 @@
+<!-- MAIN CONTENT AREA -->
+<div class="main-content">
+    <div class="container">
+        <!-- BREADCRUMBS -->
+        <div id="breadcrumb">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/aboutus/believe">About Us</a></li>
+                <li>Gallery</li>
+            </ul>
+        </div>
+        <!-- GALLERY GRID STARTS HERE -->
+        <div class="portfolio-grid-1 main-block col-wrapper">
+            <h1>Gallery</h1>
+            <ul id="gallery-main" class="thumbnails gallery">
+               {{#each images}}
+                <li class="span3 small hp-wrapper item">
+                    <a href="https://s3.amazonaws.com/media.cincygrace.com/{{this}}" rel="group" class="top-link thumbnail">
+                        <img alt="" src="/assets/images/gal_hover.png" class="hover-shade" />
+
+                        <img style="height: 160px; width: 220px;" alt="" src="https://s3.amazonaws.com/media.cincygrace.com/{{this}}a" />
+
+                    </a>
+                </li>
+                {{/each}}
+            </ul>
+        </div>
+        <!-- END GALLERY GRID -->
+        <hr>
+
+    </div>
+
+</div>
