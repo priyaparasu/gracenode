@@ -6,7 +6,8 @@
   "scripts": {
     "test": "test",
     "lint": "eslint . --ext .js .jsx --cache",
-    "compile": "babel --presets es2015,stage-0 -d lib/ server/"
+    "compile": "babel --presets es2015,stage-0 -d lib/ server/",
+    "start": "nodemon server/server.js --exec node_modules/.bin/babel-node"
   },
   "author": "",
   "license": "ISC",
