@@ -1,0 +1,85 @@
+
+<!-- MAIN CONTENT AREA -->
+        <div class="main-content">            <div class="container">
+                <div class="row show-frid">
+                    <div class="span12">
+<!-- BREADCRUMBS -->
+                        <div id="breadcrumb">
+                            <ul>
+                                <li class="home"><a href="#">Home</a></li>
+                                <li><a href="#">Sermons</a></li>
+                                <li>Video</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-wrapper">
+                    <!-- h1>Our Work</h1>
+<!-- START PORTFOLIO NAV -->
+                    <!-- div class="portfolio-nav">
+<!-- SET PORTFOLIO NAV FILTERS HERE -->
+                        <!-- ul id="filters" data-option-key="filter" class="nav nav-pills nav-pills-portfolio">
+                            <li class="active"><a href="#" data-toggle="pill" data-filter="*">All</a></li>
+                            <li><a href="#" data-toggle="pill" data-filter=".web">Web</a></li>
+                            <li><a href="#" data-toggle="pill" data-filter=".print">Print</a></li>
+                            <li><a href="#" data-toggle="pill" data-filter=".photo">Photo</a></li>
+                            <li><a href="#" data-toggle="pill" data-filter=".video">Video</a></li>
+                        </ul>
+<!-- SET PORTFOLIO NAV SWITCHES -->
+                        <!-- ul class="portfolio-switch">
+                            <li class="collapsed"><a class="active" href="portfolio.html"></a></li>
+                            <li class="simple"><a href="portfolio_grid.html"></a></li>
+                        </ul>
+                    </div>
+<!-- END PORTFOLIO NAV -->
+
+
+<!-- START PORTFOLIO GRID -->
+                    <div class="portfolio-grid-1 main-block">
+                        <div id="portfolio" class="row show-grid">
+                {{#each videos}}
+                <!-- Each Video-->
+                <div class="span3 small hp-wrapper element video">
+                    <a class="youtube" href="{{this.vidoeUrl}}"><img alt="" src="/assets/images/220_arrow_hover.png" class="hover-shade">  </a>
+                    <a href="#" class="top-link"><img alt="" style="width: 220px; height: 160px; margin-top: -20px" src="{{this.imageUrl}}"></a>
+                    <br/>
+                    <a class="youtube" href="https://www.youtube.com/v/vWH04mGvGRU">{{this.title}}</a>
+                </div>
+                {{/each}}
+
+
+                                                    </div>
+<!-- END PORTFOLIO GRID -->
+                    </div>
+                </div>
+                <hr>
+<!-- MAIN CONTENT AREA: REDESIGN CUSTOM - CLIENTS LOGO BAR -->
+
+            </div>
+<!-- MAIN CONTENT AREA: REDESIGN CUSTOM - RECENT TWEETS BAR -->
+
+        </div>
+
+
+
+    <script type="text/javascript" src="http://www.cincygrace.com/wp-content/themes/GraceWPTemplate/js/jquery.youtubepopup.js"></script>
+  <script type="text/javascript">
+
+        jQuery(document).ready(function($){
+
+             $("a.youtube").YouTubePopup(
+                {
+                    autoplay: 1,
+                    showBorder: true,
+                    theme:'light',
+                    overlayOpacity: .5,
+                    hideTitleBar : true,
+                    height: 400,
+					cssClass: 'modal-dialog'
+                        });
+
+        });
+
+
+    </script>
