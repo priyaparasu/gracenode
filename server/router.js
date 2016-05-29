@@ -1,6 +1,6 @@
 import express from 'express';
 import getImages from './getimages';
-import getVideos from './getVideos';
+import getVideos from './getvideos';
 import getSermons from './getsermons';
 
 
