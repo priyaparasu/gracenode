@@ -13,8 +13,6 @@ export default (callback) => {
         imageUrl : item.snippet.thumbnails.high.url, //big imageUrl
         videoUrl : 'https://www.youtube.com/v/'+ item.snippet.resourceId.videoId
       }))
-      console.log(videos);
-
         callback(videos);
 
     })

@@ -1,8 +1,10 @@
 import express from 'express'
 import exphbs from 'express-handlebars';
 import router from './router.js'
-var app = express();
 
+var compression = require('compression');
+var app = express();
+app.use(compression());
 app.use(express.static('public'));
 app.engine('.hbs', exphbs({
     defaultLayout: 'main',
