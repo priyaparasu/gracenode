@@ -14,11 +14,14 @@ let activeMap = {
   '/contactus'      :     { title: 'Contact Us',  active: { contactus: 'active'}},
   '/events'         :     { title: 'Events',      active: { events: 'active'}},
   '/videos'         :     { title: 'Videos',      active: { sermons: 'active', videos: 'active'}},
-  '/sermons'        :    { title: 'Sermons',      active: { sermons: 'active', sermons: 'active'}}
+  '/sermons'        :     { title: 'Sermons',     active: { sermons: 'active', sermons: 'active'}}
+//  ,'/admin'          :     { title: 'Admin'        active: { admin: 'active' }}
   }
-router.get('/', function(req, res) {
-  console.log(req.path)
-    res.render('home', activeMap[req.path]);
+router.get('/', (req, res) =>{
+  getImages('banners',(images)=>{
+    res.render('home', Object.assign(activeMap[req.path], {images}));
+  });
+
 });
 router.get('/aboutus', (req, res) => {
     res.render('believe', activeMap[req.path]);
@@ -27,7 +30,7 @@ router.get('/aboutus/pastor', (req, res) => {
     res.render('pastor', activeMap[req.path]);
 });
 router.get('/aboutus/gallery', (req, res)=>{
-  getImages((images)=>{
+  getImages('ImageGallery',(images)=>{
     res.render('gallery', Object.assign(activeMap[req.path], {images}));
   });
 });
@@ -47,4 +50,9 @@ router.get('/sermons', (req, res) => {
     res.render('sermons', Object.assign(activeMap[req.path], {sermons}));
   });
 });
+router.get('/admin', (req, res)=>{
+  getImages('banners',(images)=>{
+    res.render('admin/index', Object.assign({layout: 'admin'}, {images}));
+  });
+})
 module.exports = router;

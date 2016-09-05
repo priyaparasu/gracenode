@@ -8,38 +8,11 @@
         <div class="bannercontainer">
             <div class="banner">
                 <ul>
-
+                    {{#each images}}
                     <li class="slide1" data-transition="slideleft" data-slotamount="5" data-masterspeed="300">
-                        <img alt="" src="assets/images/PastorSamTrip.jpg" />
+                        <img alt="" src="https://s3.amazonaws.com/media.cincygrace.com/{{this}}" />
                     </li>
-
-                    <li class="slide1" data-transition="slidedown" data-slotamount="5" data-masterspeed="300">
-                        <img alt="" src="assets/images/Supernatural-Encounter.png" />
-                    </li>
-
-                    <li class="slide1" data-transition="boxfade" data-slotamount="5" data-masterspeed="300">
-                        <img alt="" src="assets/images/Slide2-21.jpg" />
-                    </li>
-
-                    <li class="slide1" data-transition="slideleft" data-slotamount="5" data-masterspeed="300">
-                        <img alt="" src="assets/images/Slide1-copy1.jpg" />
-                    </li>
-
-                    <li class="slide1" data-transition="slotfade-horizontal" data-slotamount="5" data-masterspeed="300">
-                        <img alt="" src="assets/images/slider01.png" />
-                    </li>
-
-                    <li class="slide1" data-transition="slideleft" data-slotamount="5" data-masterspeed="300">
-                        <img alt="" src="assets/images/slider02.jpg" />
-                    </li>
-
-                    <li class="slide1" data-transition="slideleft" data-slotamount="5" data-masterspeed="300">
-                        <img alt="" src="assets/images/growthfactors.png" />
-                    </li>
-
-                    <li class="slide1" data-transition="slideleft" data-slotamount="5" data-masterspeed="300">
-                        <img alt="" src="assets/images/JoshuaGeneration.jpg" />
-                    </li>
+                    {{/each}}
 
                 </ul>
                 <div class="tp-bannertimer"></div>
