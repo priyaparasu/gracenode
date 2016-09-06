@@ -41,10 +41,10 @@
                 {{#each videos}}
                 <!-- Each Video-->
                 <div class="span3 small hp-wrapper element video">
-                    <a class="youtube" href="{{this.vidoeUrl}}"><img alt="" src="/assets/images/220_arrow_hover.png" class="hover-shade">  </a>
-                    <a href="#" class="top-link"><img alt="" style="width: 220px; height: 160px; margin-top: -20px" src="{{this.imageUrl}}"></a>
+                    <a class="youtube" href="{{this.videoUrl}}"><img alt="" src="/assets/images/220_arrow_hover.png" class="hover-shade">  </a>
+                    <a href="{{this.videoUrl}}" target="_blank" class="top-link"><img alt="" style="width: 220px; height: 160px; margin-top: -20px" src="{{this.imageUrl}}"></a>
                     <br/>
-                    <a class="youtube" href="https://www.youtube.com/v/vWH04mGvGRU">{{this.title}}</a>
+                    <a class="youtube"  target="_blank" href="{{this.videoUrl}}">{{this.title}}</a>
                 </div>
                 {{/each}}
 
@@ -60,26 +60,3 @@
 <!-- MAIN CONTENT AREA: REDESIGN CUSTOM - RECENT TWEETS BAR -->
 
         </div>
-
-
-
-    <script type="text/javascript" src="http://www.cincygrace.com/wp-content/themes/GraceWPTemplate/js/jquery.youtubepopup.js"></script>
-  <script type="text/javascript">
-
-        jQuery(document).ready(function($){
-
-             $("a.youtube").YouTubePopup(
-                {
-                    autoplay: 1,
-                    showBorder: true,
-                    theme:'light',
-                    overlayOpacity: .5,
-                    hideTitleBar : true,
-                    height: 400,
-					cssClass: 'modal-dialog'
-                        });
-
-        });
-
-
-    </script>
