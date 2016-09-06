@@ -217,6 +217,8 @@
 </body>
 
 </html>
+<script type="text/javascript" src="scripts/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="scripts/jquery.mb.miniPlayer.js"></script>
 <script type="text/javascript" src="scripts/jquery.youtubepopup.js"></script>
 <script type="text/javascript">
 
@@ -237,3 +239,23 @@
 
 
   </script>
+  <script type="text/javascript">
+
+		jQuery(document).ready(function($){
+    if(window.location && window.location.pathname == "/sermons"){
+      console.log("in sermons");
+			$(".audio").mb_miniPlayer({
+				width:240,
+				inLine:false,
+                swfPath: "<?php echo plugins_url(); ?>/jquery.mb.miniAudioPlayer-1.6.5/inc/"
+			});
+    }
+		});
+   function onLinkClick(url, name, date)
+	 {
+ 	  jQuery('#m5').mb_miniPlayer_changeFile(url,false,name);
+	  _gaq.push(['_trackEvent', 'Audio', 'Play', name]);
+
+   }
+
+	</script>
