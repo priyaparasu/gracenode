@@ -6,10 +6,9 @@
   "scripts": {
     "test": "test",
     "lint": "eslint . --ext .js .jsx --cache",
-    "build": "node_modules/babel-cli/bin/babel.js --presets es2015,stage-0 -d lib/ server/",
+    "build": "./node_modules/babel-cli/bin/babel.js --presets es2015,stage-0 -d lib/ server/",
     "start-dev": "nodemon server/server.js --exec node_modules/.bin/babel-node",
-
-    "start": "npm i && npm run build && node lib/server.js"
+    "start": "npm ryb build && node lib/server.js"
   },
   "author": "",
   "license": "ISC",
