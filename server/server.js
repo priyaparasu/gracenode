@@ -15,7 +15,9 @@ app.set('view engine', '.hbs');
 
 // app.use('/aboutus', router);
 app.use('/', router);
-var port = process.env.PORT || 3000;
+
+var port = process.env.PORT || 8080;
+
 app.listen(port, function() {
     console.log('Example app listening on port '+port+'!');
 });
