@@ -226,12 +226,7 @@
         $(function() {
           initS3FileUpload($('#fileInput'));
         });
-          $("input:file").change(function () {
-             if ($(this).val() !== "") {
-                var file = $('#fileInput')[0].files[0];
-                console.log(file.size);
-             }
-          });
+
 
           $(".delete").click(function(e) {
 
