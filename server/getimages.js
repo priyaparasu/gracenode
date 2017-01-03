@@ -4,7 +4,7 @@ export default (folderName,callback) => {
   let images = [];
   axios.get('http://media.cincygrace.com.s3.amazonaws.com/?list-type=2&prefix='+folderName+'/')
     .then(function (response) {
-      console.log('callback: ', callback);
+      //console.log('callback: ', callback);
       parseString(response.data, (err,result)=>{
         images = result.ListBucketResult
                   .Contents

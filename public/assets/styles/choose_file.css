@@ -1,0 +1,18 @@
+.choose_file{
+    position:relative;
+    display:inline-block;
+	border-radius:2px;
+    border:#ebebeb solid 1px;
+    width:175px;
+    padding: 4px 6px 4px 8px;
+    font: normal 14px Myriad Pro, Verdana, Geneva, sans-serif;
+    color: white;
+    float: right;
+	background:#4267b2
+}
+.choose_file input[type="file"]{
+    -webkit-appearance:none;
+    position:absolute;
+    top:0; left:0;
+    opacity:0;
+}

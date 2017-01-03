@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="/assets/styles/custom.css" />
     <link rel="stylesheet" href="/assets/styles/isotope.css" />
     <link rel="stylesheet" href="/assets/styles/color_scheme.css" />
+    <link rel="stylesheet" href="/assets/styles/choose_file.css" />
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="/assets/styles/font-awesome.css" />
     <link rel="stylesheet" href="/assets/styles/font-awesome-ie7.css" />
@@ -219,6 +220,19 @@
           $( "#sortable" ).disableSelection();
         } );
         </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-file-upload/9.5.7/jquery.fileupload.js"></script>
+      <script src="scripts/s3client.js"></script>
+      <script>
+        $(function() {
+          initS3FileUpload($('#fileInput'));
+        });
+          $("input:file").change(function () {
+             if ($(this).val() !== "") {
+                var file = $('#fileInput')[0].files[0];
+                console.log(file.size);
+             }
+          });
+      </script>
 </body>
 
 </html>
