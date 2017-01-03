@@ -3,10 +3,12 @@ import getImages from './getimages';
 import getVideos from './getvideos';
 import getSermons from './getsermons';
 import s3browserupload from './s3browserupload';
+import AWS from 'aws-sdk';
 import passport from 'passport';
 import authenticationMiddleware from './authenticationMiddleware';
 
 var router = express.Router();
+var s3 = new AWS.S3();
 var sermonFetcher = getSermons();
 let activeMap = {
   '/'               :     { title: 'Home',        active: { home: 'active'    }},
@@ -80,8 +82,8 @@ router.get('/admin', (req, res)=>{
 })
 
 var s3Config = {
-  accessKey: process.env.S3_ACCESS_KEY,
-  secretKey: process.env.S3_SECRET_KEY,
+  accessKey: process.env.AWS_ACCESS_KEY_ID,
+  secretKey: process.env.AWS_SECRET_ACCESS_KEY,
   bucket: process.env.S3_BUCKET,
   region: process.env.S3_REGION
 };
@@ -96,5 +98,17 @@ router.get('/s3_credentials', function(request, response) {
   } else {
     response.status(400).send('filename is required');
   }
+});
+router.post('/admin/deletebanner', function(request,response){
+  var key = request.body.filename.replace("https://s3.amazonaws.com/media.cincygrace.com/","");
+  var params = {
+    Bucket: s3Config.bucket,
+    Key: key
+  }
+  console.log("params ", params);
+   s3.deleteObject(params, function(err, data) {
+   if (err) console.log(err, err.stack); // an error occurred
+   else     console.log(data);           // successful response
+  });
 });
 module.exports = router;

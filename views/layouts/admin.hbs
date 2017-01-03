@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="/assets/styles/custom.css" />
     <link rel="stylesheet" href="/assets/styles/isotope.css" />
     <link rel="stylesheet" href="/assets/styles/color_scheme.css" />
-    <link rel="stylesheet" href="/assets/styles/choose_file.css" />
+    <link rel="stylesheet" href="/assets/styles/admin_banners.css" />
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="/assets/styles/font-awesome.css" />
     <link rel="stylesheet" href="/assets/styles/font-awesome-ie7.css" />
@@ -231,6 +231,15 @@
                 var file = $('#fileInput')[0].files[0];
                 console.log(file.size);
              }
+          });
+
+          $(".delete").click(function(e) {
+
+
+          $.post( "/admin/deletebanner",{ filename: e.target.parentNode.children[0].src }, function( data ) {
+          //  alert( "Data Loaded: " + data );
+          });
+            location.reload();
           });
       </script>
 </body>

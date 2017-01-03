@@ -31,13 +31,15 @@
     <input id="fileInput" type="file" name="new banner" />
   </div>
 <!-- BEGIN ARTICLE CONTENT AREA -->
+
                             <div class="span9 main-column two-columns-left">
 
                               <H3>Banners</H3>
                               <ul id="sortable">
                                   {{#each images}}
                                   <li class="slide1" data-transition="slideleft" data-slotamount="5" data-masterspeed="300">
-                                      <img alt="" src="https://s3.amazonaws.com/media.cincygrace.com/{{this}}" />
+                                      <img class="bannerImg" alt="" src="https://s3.amazonaws.com/media.cincygrace.com/{{this}}" />
+                                      <input type="image" id="deleteBtn" class="delete"   src="assets/images/delete.png"  />
                                   </li>
                                   {{/each}}
 

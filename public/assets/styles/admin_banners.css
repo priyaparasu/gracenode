@@ -16,3 +16,11 @@
     top:0; left:0;
     opacity:0;
 }
+input.delete{
+  width: 15px;
+  float:right;
+  margin-top: 20%;
+}
+.bannerImg{
+  max-width: 85%;
+}

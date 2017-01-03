@@ -18,6 +18,7 @@ window.initS3FileUpload = function($fileInput) {
     dataType: 'xml',
     done: onS3Done
   });
+
 };
 
 // This function retrieves s3 parameters from our server API and appends them
@@ -47,6 +48,7 @@ function onS3Done(e, data) {
   // Typically, after uploading a file to S3, you want to register that file with
   // your backend. Remember that we did not persist anything before the upload.
   console.log($('<a/>').attr('href', s3Url).text('File uploaded at '+s3Url).appendTo($('body')));
+  location.reload();
 };
 function s3Copy(){
   $.ajax({
