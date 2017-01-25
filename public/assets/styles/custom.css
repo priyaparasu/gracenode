@@ -1007,7 +1007,7 @@ body {
     font-size: 12px;
     line-height: 20px;
     color: #333333;
-    background-color: #ffffff;
+    background-color: #f9f9f9;
 }
 h1, h2, h3 {
     font-weight: normal;
@@ -1608,7 +1608,7 @@ input.btn {
 /* Church Motto */
 
 .church-motto {
-   
+
 }
 .church-motto p {
     color: #2773ae;
@@ -2534,9 +2534,8 @@ div.alert {
 }
 /*Footer End*/
 
-.botBlocker { 
- left: -9999px; 
- position: absolute; 
+.botBlocker {
+ left: -9999px;
+ position: absolute;
  top: -9999px;
 }
-

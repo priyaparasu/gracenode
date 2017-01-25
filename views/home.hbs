@@ -1,7 +1,7 @@
 <div class="main-content">
     <div class="container">
         <!-- MAIN CONTENT AREA: Church Motto -->
-        <div class="church-motto">
+        <div class="church-motto" style="display:none">
             <p> "Carrying God's supernatural power to the nations" </p>
         </div>
         <!-- MAIN CONTENT AREA: SLIDER BANNER (REVOLUTION SLIDER) -->
@@ -22,7 +22,7 @@
             <div class="span12">
                 <div class="row">
                     <!--  MAIN CONTENT AREA: REDESIGN CUSTOM - HERO BLOCK 1 (TEXT BLOCK)] -->
-                    <div class="span6 home-block hero-block-1">
+                    <div class="span6 home-block hero-block-1" style="display:none">
                         <h1>Welcome to Grace</h1>
                         <h2>Experience God's supernatural power</h2>
                         <p>We are an international body that truly believe in God's word and its supernatural power to transform lives. We are seeing God working powerfully among us through healing, miracles and deliverance.
@@ -32,7 +32,7 @@
                     <div class="span1">
                     </div>
                     <!-- MAIN CONTENT AREA: bizstrap CUSTOM - HERO BLOCK 2 -->
-                    <div class="span5 home-block">
+                    <div class="span5 home-block" style="display:none">
                         <div class="grey-box hero-block-2">
                             <h2><a href="#">Connect With Us</a></h2>
                             <p><img alt="" src="assets/images/connectgrow.jpg" />
@@ -64,60 +64,54 @@
                 <div class="span12">
                     <div class="row show-grid">
 
+                        <div class="span3">
+                              <img alt="" style="height:160; width:220" src="https://s3.amazonaws.com/media.cincygrace.com/small_banners/holyspiritnight.jpg" lass="img-rounded" />
+                            <p class="block-post-date"></p>
+                        </div>
+                        <div class="span3">
+                                <img alt="" style="height:160; width:220" src="https://s3.amazonaws.com/media.cincygrace.com/small_banners/march7.jpg" lass="img-rounded" />
+                            <p class="block-post-date"></p>
+                        </div>
+                        <div class="span3">
+                            <img alt="" style="height:160; width:220" src="https://s3.amazonaws.com/media.cincygrace.com/small_banners/sermons.jpg" lass="img-rounded" />
+                            <p class="block-post-date"></p>
+                        </div>
+                        <div class="span3">
+                            <div style="padding:3px 3px 18px 3px;background-image: url('https://s3.amazonaws.com/media.cincygrace.com/small_banners/connect.jpg')">
+                            <h3><a href="#">Connect With Us</a></h3>
+                              <ul style="list-style-type: none;">
+                                  <li>
+                                      <a href="https://www.facebook.com/PastorSamDarla"><img src="assets/images/facebook.png" /> Facebook</a>
+                                  </li>
+                                  <li>
+                                      <a href="https://twitter.com/SamDarla10"><img src="assets/images/twitter.png" /> Twitter</a>
+                                  </li>
+                                  <li>
+                                      <a href="http://www.youtube.com/user/samdarla10"><img src="assets/images/you_tube.png" /> You Tube</a>
+                                  </li>
+                              </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row show-grid clear-both">
+                <div class="span12">
+                    <div class="row show-grid">
+
+                        <!-- Each Video-->
+                        {{#each videos}}
                         <!-- Each Video-->
 
                         <div class="span3">
-                            <a class="block-post-img youtube" href="https://www.youtube.com/v/vWH04mGvGRU">
-                                <img alt="" style="height:160; width:220" src="https://i.ytimg.com/vi/vWH04mGvGRU/hqdefault.jpg" lass="img-rounded" />
+                            <a class="block-post-img youtube" href="{{this.videoUrl}}">
+                                <img alt="" style="height:160; width:220" src="{{this.imageUrl}}" lass="img-rounded" />
                             </a>
-                            <a class="block-post-title youtube" href="https://www.youtube.com/v/vWH04mGvGRU">Singapore Ministry</a>
+                            <a class="block-post-title youtube" href="{{this.videoUrl}}">{{this.title}}</a>
                             <p class="block-post-date"></p>
-                            <p class="block-post-content">Mark 16:20King James Version (KJV) 20 And they went forth, and preached every where, the Lord working with them, and confirming the word with signs following. Amen.</p>
-                            <a class="block-post-more youtube" href="https://www.youtube.com/v/vWH04mGvGRU">View Online&nbsp;&raquo;</a>
                         </div>
-
-                        <!-- end Foreach Video -->
-
-                        <!-- Each Video-->
-
-                        <div class="span3">
-                            <a class="block-post-img youtube" href="https://www.youtube.com/v/NJbswG4XKPU">
-                                <img alt="" style="height:160; width:220" src="https://i.ytimg.com/vi/NJbswG4XKPU/hqdefault.jpg" lass="img-rounded" />
-                            </a>
-                            <a class="block-post-title youtube" href="https://www.youtube.com/v/NJbswG4XKPU">Addicted to Jesus</a>
-                            <p class="block-post-date"></p>
-                            <p class="block-post-content"></p>
-                            <a class="block-post-more youtube" href="https://www.youtube.com/v/NJbswG4XKPU">View Online&nbsp;&raquo;</a>
-                        </div>
-
-                        <!-- end Foreach Video -->
-
-                        <!-- Each Video-->
-
-                        <div class="span3">
-                            <a class="block-post-img youtube" href="https://www.youtube.com/v/OiZ3PhBVUjU">
-                                <img alt="" style="height:160; width:220" src="https://i.ytimg.com/vi/OiZ3PhBVUjU/hqdefault.jpg" lass="img-rounded" />
-                            </a>
-                            <a class="block-post-title youtube" href="https://www.youtube.com/v/OiZ3PhBVUjU">09212015-Holiness</a>
-                            <p class="block-post-date"></p>
-                            <p class="block-post-content"></p>
-                            <a class="block-post-more youtube" href="https://www.youtube.com/v/OiZ3PhBVUjU">View Online&nbsp;&raquo;</a>
-                        </div>
-
-                        <!-- end Foreach Video -->
-
-                        <!-- Each Video-->
-
-                        <div class="span3">
-                            <a class="block-post-img youtube" href="https://www.youtube.com/v/SPaM7B648ag">
-                                <img alt="" style="height:160; width:220" src="https://i.ytimg.com/vi/SPaM7B648ag/hqdefault.jpg" lass="img-rounded" />
-                            </a>
-                            <a class="block-post-title youtube" href="https://www.youtube.com/v/SPaM7B648ag">09232015-Faith</a>
-                            <p class="block-post-date"></p>
-                            <p class="block-post-content"></p>
-                            <a class="block-post-more youtube" href="https://www.youtube.com/v/SPaM7B648ag">View Online&nbsp;&raquo;</a>
-                        </div>
-
+                        {{/each}}
                         <!-- end Foreach Video -->
                     </div>
                 </div>

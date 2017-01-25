@@ -23,7 +23,11 @@ let activeMap = {
   }
 router.get('/', (req, res) =>{
   getImages('banners',(images)=>{
-    res.render('home', Object.assign(activeMap[req.path], {images}));
+    var maxVideos = 4;
+    getVideos(maxVideos,(videos)=>{
+      console.log(videos);
+      res.render('home', Object.assign(activeMap[req.path], {images},{videos}));
+    });
   });
 
 });
@@ -45,7 +49,8 @@ router.get('/events', (req, res) => {
     res.render('events',activeMap[req.path]);
 });
 router.get('/videos', (req, res) => {
-  getVideos((videos)=>{
+  var maxResults = 50;
+  getVideos(maxResults,(videos)=>{
     res.render('videos', Object.assign(activeMap[req.path], {videos}));
   });
 });
