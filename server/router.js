@@ -21,12 +21,31 @@ let activeMap = {
   '/sermons'        :     { title: 'Sermons',     active: { sermons: 'active', sermons: 'active'}}
 //  ,'/admin'          :     { title: 'Admin'        active: { admin: 'active' }}
   }
+let sites = {
+  'cincygrace':{
+    'title': 'Grace International Church',
+    'logo': 'logo.png'
+  },
+  'kjfc': {
+  'title': 'King Jesus Faith Center',
+  'logo': 'logokjfc.png'
+  }
+}
 router.get('/', (req, res) =>{
+  var host = req.headers.host;
+
+ if(host.match(/localhost\.*/))
+ {
+   sites[host] = sites['kjfc'];
+   console.log(sites);
+
+ }
+
   getImages('banners',(images)=>{
     var maxVideos = 4;
     getVideos(maxVideos,(videos)=>{
       console.log(videos);
-      res.render('home', Object.assign(activeMap[req.path], {images},{videos}));
+      res.render('home', Object.assign(activeMap[req.path], {images},{videos},{site: sites[host]}));
     });
   });
 
