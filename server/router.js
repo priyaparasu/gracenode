@@ -22,22 +22,25 @@ let activeMap = {
 //  ,'/admin'          :     { title: 'Admin'        active: { admin: 'active' }}
   }
 let sites = {
-  'cincygrace':{
-    'title': 'Grace International Church',
-    'logo': 'logo.png'
+  cincygrace:{
+    title: 'Grace International Church',
+    logo: 'logo.png'
   },
-  'kjfc': {
-    'title': 'King Jesus Faith Center',
-    'logo': 'logokjfc.png'
+  kjfc: {
+    title: 'King Jesus Faith Center',
+    logo: 'logokjfc.png'
   }
 }
 router.get('/', (req, res) =>{
   var host = req.headers.host;
-  var site = sites['cincygrace'] // default
+  var site = sites.cincygrace // default
 
   if (host.match(/\.*kingjesusfaithcenter\.*/)) {
-   site = {"site":sites['kfjc']}
+console.log('match');
+   site = sites.kjfc
+   
  }
+console.log('site', site, sites.kjfc)	
 
   getImages('banners',(images)=>{
     var maxVideos = 4;
