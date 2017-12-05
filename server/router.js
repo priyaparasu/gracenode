@@ -35,7 +35,7 @@ router.get('/', (req, res) =>{
   var host = req.headers.host;
   var site = sites['cincygrace'] // default
 
-  if (host.match(/\.*kingjesusfaithcenter.*/)) {
+  if (host.match(/\.*kingjesusfaithcenter\.*/)) {
    site = {"site":sites['kfjc']}
  }
 
