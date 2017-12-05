@@ -27,25 +27,23 @@ let sites = {
     'logo': 'logo.png'
   },
   'kjfc': {
-  'title': 'King Jesus Faith Center',
-  'logo': 'logokjfc.png'
+    'title': 'King Jesus Faith Center',
+    'logo': 'logokjfc.png'
   }
 }
 router.get('/', (req, res) =>{
   var host = req.headers.host;
+  var site = sites['cincygrace'] // default
 
- if(host.match(/localhost\.*/))
- {
-   sites[host] = sites['kjfc'];
-   console.log(sites);
-
+  if (host.match(/\.*kingjesusfaithcenter.*/)) {
+   site = {"site":sites['kfjc']}
  }
 
   getImages('banners',(images)=>{
     var maxVideos = 4;
     getVideos(maxVideos,(videos)=>{
       console.log(videos);
-      res.render('home', Object.assign(activeMap[req.path], {images},{videos},{site: sites[host]}));
+      res.render('home', Object.assign(activeMap[req.path], {images},{videos},{site}));
     });
   });
 
